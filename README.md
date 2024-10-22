@@ -1,24 +1,39 @@
-# README
+# Teacher Portal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+Teacher Portal is a web application built with Ruby on Rails that allows teachers to manage their students. Teachers can sign in to view a list of students, edit their details, and track their performance.
 
-* Ruby version
+## Features
 
-* System dependencies
+- User authentication using Devise
+- Teacher dashboard to view students
+- CRUD operations for students
+- Bootstrap for responsive design
 
-* Configuration
+## Technologies Used
 
-* Database creation
+- Ruby on Rails 7.x
+- Ruby 3.1.1
+- Bootstrap 5.x
+- Devise for authentication
+- PostgreSQL (or any preferred database)
 
-* Database initialization
+## Installation
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+Ensure you have the following installed:
 
-* Deployment instructions
+- Ruby (version 3.1.1 or higher)
+- Rails (version 7.x)
+- PostgreSQL (or any preferred database)
+- Node.js and Yarn (for managing JavaScript dependencies)
 
-* ...
+### Steps to Install
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Rahul989898/teacher_portal
+   cd teacher_portal
