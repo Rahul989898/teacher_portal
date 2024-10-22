@@ -1,0 +1,6 @@
+<h1><%= @student.name %></h1>
+<p>Subject: <%= @student.subject.name if @student.subject %></p>
+<p>Marks: <%= @student.marks %></p>
+
+<%= link_to 'Edit', edit_student_path(@student) %>
+<%= link_to 'Back to Students', students_path %>
