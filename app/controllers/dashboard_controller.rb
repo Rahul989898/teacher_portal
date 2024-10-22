@@ -3,6 +3,6 @@ class DashboardController < ApplicationController
 
   def index
     # Fetch students associated with the logged-in teacher
-    @students = current_teacher.students 
+    @students = current_teacher.students
   end
 end

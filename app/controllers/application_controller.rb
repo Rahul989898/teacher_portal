@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protected
 
   def after_sign_in_path_for(resource)
-    students_path  # Redirect to the students listing page or any other path
+    root_path  # Redirect to the students listing page or any other path
   end
 end

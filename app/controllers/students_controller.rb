@@ -21,7 +21,7 @@ class StudentsController < ApplicationController
   def create
     @student = current_teacher.students.build(student_params)  # Build a new student associated with the logged-in teacher
     if @student.save
-      redirect_to students_path, notice: 'Student was successfully created.'
+      redirect_to root_path, notice: 'Student was successfully created.'
     else
       render :new
     end
@@ -34,17 +34,17 @@ class StudentsController < ApplicationController
 
   # PATCH/PUT /students/:id
   def update
-    if @student.update(student_params)
-      redirect_to students_path, notice: 'Student was successfully updated.'
-    else
-      render :edit
-    end
+  if @student.update(student_params)
+    redirect_to root_path, notice: 'Student was successfully updated.'
+  else
+    render :edit
   end
+end
 
   # DELETE /students/:id
   def destroy
     @student.destroy
-    redirect_to students_path, notice: 'Student was successfully deleted.'
+    redirect_to root_path, notice: 'Student was successfully deleted.'
   end
 
   private
@@ -54,6 +54,6 @@ class StudentsController < ApplicationController
   end
 
   def student_params
-    params.require(:student).permit(:name, :marks, :subject_id)  # Permit the necessary student parameters
-  end
+  params.require(:student).permit(:name, :marks, :subject)  # This is correct
+end
 end
