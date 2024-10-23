@@ -1,0 +1,7 @@
+// app/views/students/update.js.erb
+
+<% if flash[:notice] %>
+  skyCommon.showNoticeModal("<%= j flash[:notice] %>");
+<% elsif flash[:alert] %>
+  skyCommon.showWarningmodal("<%= j flash[:alert] %>");
+<% end %>
